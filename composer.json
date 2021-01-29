@@ -1,0 +1,27 @@
+{
+  "name": "visto9259/lmcuser-api-tools-auth",
+  "description": "LmcUser Authentication for Laminas Api Tools",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Eric Richer",
+      "email": "eric.richer@vistoconsulting.com"
+    }
+  ],
+  "require": {
+    "laminas/laminas-servicemanager": "^3.0",
+    "laminas/laminas-modulemanager": "^2.0",
+    "laminas-api-tools/api-tools-mvc-auth": "^1.0",
+    "laminas-commons/lmc-user": "^3.2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "LmcUserApiToolsAuth\\" : "src"
+    }
+  },
+  "extra": {
+    "laminas": {
+      "module": ["LmcUserApiToolsAuth"]
+    }
+  }
+}
