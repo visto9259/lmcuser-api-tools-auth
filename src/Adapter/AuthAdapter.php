@@ -4,8 +4,7 @@
  * @copyright Eric Richer
  */
 
-namespace LmcUserApiToolsAuth;
-
+namespace LmcUserApiToolsAuth\Adapter;
 
 use Laminas\ApiTools\MvcAuth\Authentication\AdapterInterface;
 use Laminas\ApiTools\MvcAuth\Identity\AuthenticatedIdentity;
@@ -42,16 +41,19 @@ class AuthAdapter implements AdapterInterface
         return $type === 'LmcUserAuth';
     }
 
+    /** @inheritdoc  */
     public function getTypeFromRequest(Request $request)
     {
-        // TODO: Implement getTypeFromRequest() method.
+        return false;
     }
 
+    /** @inheritdoc  */
     public function preAuth(Request $request, Response $response)
     {
-        // TODO: Implement preAuth() method.
+        return false;
     }
 
+    /** @inheritdoc  */
     public function authenticate(Request $request, Response $response, MvcAuthEvent $mvcAuthEvent)
     {
         // Check is the user is authenticated

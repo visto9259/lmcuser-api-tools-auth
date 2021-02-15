@@ -3,7 +3,7 @@
 
 namespace LmcUserApiToolsAuth;
 
-
+use LmcUserApiToolsAuth\Adapter\AuthAdapterDelegatorFactory;
 use Laminas\ApiTools\MvcAuth\Authentication\DefaultAuthenticationListener;
 use Laminas\ModuleManager\Feature\ServiceProviderInterface;
 

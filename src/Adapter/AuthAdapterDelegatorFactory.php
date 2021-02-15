@@ -5,7 +5,7 @@
  */
 
 
-namespace LmcUserApiToolsAuth;
+namespace LmcUserApiToolsAuth\Adapter;
 
 
 use Interop\Container\ContainerInterface;
@@ -15,6 +15,7 @@ use Laminas\ServiceManager\Factory\DelegatorFactoryInterface;
 class AuthAdapterDelegatorFactory implements DelegatorFactoryInterface
 {
 
+    /** @inheritdoc  */
     public function __invoke(ContainerInterface $container, $name, callable $callback, array $options = null)
     {
         $listener = $callback();
